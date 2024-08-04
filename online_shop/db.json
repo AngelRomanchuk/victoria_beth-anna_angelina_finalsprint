@@ -3,38 +3,38 @@
     {
       "id": 1,
       "name": "Rosette",
-      "description": "This is a lipstick",
-      "price": 10
+      "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+      "price": 12
     },
     {
       "id": 2,
       "name": "Plum Dandy",
-      "description": "Description of product 2",
-      "price": 30
+      "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+      "price": 12
     },
     {
       "id": 3,
       "name": "Coral",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+      "price": 12
     },
     {
       "id": 4,
       "name": "Rich Espresso",
-      "description": "Description of product 1",
-      "price": 10
+      "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+      "price": 12
     },
     {
       "id": 5,
       "name": "Off Duty",
-      "description": "Description of product 2",
-      "price": 30
+      "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+      "price": 12
     },
     {
       "id": 6,
       "name": "Blushing Nude",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+      "price": 12
     },
     {
       "id": 7,
@@ -46,13 +46,13 @@
       "id": 8,
       "name": "Magenta Gleam",
       "description": "Add elegance to your lips with Silken Sheen Lip Gloss. This silky formula glides on effortlessly, providing a subtle tint and sophisticated sheen. Infused with hydrating ingredients, it keeps your lips smooth and soft for long-lasting, luminous wear.",
-      "price": 30
+      "price": 10
     },
     {
       "id": 9,
       "name": "Rouge Noir",
       "description": "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
-      "price": 50
+      "price": 10
     },
     {
       "id": 10,
@@ -64,205 +64,205 @@
       "id": 11,
       "name": "Natural Glow",
       "description": "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
-      "price": 30
+      "price": 10
     },
     {
       "id": 12,
       "name": "Pale Mist",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "This matte lip gloss combines a smooth, luxurious finish with long-lasting, full coverage. It provides a lightweight feel, giving your lips a bold, sophisticated look that lasts all day.",
+      "price": 10
     },
     {
       "id": 13,
       "name": "Pastel Petal",
-      "description": "Description of product 1",
+      "description": "This matte lip gloss combines a smooth, luxurious finish with long-lasting, full coverage. It provides a lightweight feel, giving your lips a bold, sophisticated look that lasts all day.",
       "price": 10
     },
     {
       "id": 14,
       "name": "Ivory",
-      "description": "Description of product 2",
-      "price": 30
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 15,
       "name": "Lux Beige",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 16,
       "name": "Tan Buttercup",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 17,
       "name": "Rustic Blush",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 18,
       "name": "Sunset Peach",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 19,
       "name": "Soft Apricot",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 20,
       "name": "Topical Sunrise",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
+      "price": 18
     },
     {
       "id": 21,
       "name": "Hot Hibiscus",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
+      "price": 8
     },
     {
       "id": 22,
       "name": "Summer Fizz",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
+      "price": 8
     },
     {
       "id": 23,
       "name": "Fuchsia Fusion",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
+      "price": 8
     },
     {
       "id": 24,
       "name": "Pink Blaze",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
+      "price": 8
     },
     {
       "id": 25,
       "name": "Cherry Bomb",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
+      "price": 8
     },
     {
       "id": 26,
       "name": "Lash Revolution",
       "description": "Transform your lashes with Lash Revolution Mascara, the ultimate solution for achieving revolutionary volume, length, and definition. Created for those who demand the best, this mascara delivers unparalleled performance and stunning results with every application",
-      "price": 50
+      "price": 14
     },
     {
       "id": 27,
       "name": "Dramatic Definition",
       "description": "Unlock the secret to full, dramatic lashes with our Lash Revolution Mascara. This high-impact formula is designed to amplify your lashes with rich, buildable volume and intense color, providing a bold, eye-catching look that lasts all day.",
-      "price": 50
+      "price": 14
     },
     {
       "id": 28,
       "name": "Fierce Flutter",
       "description": "Unleash the power of bold, dramatic lashes with Fierce Flutter Mascara. Designed for the modern woman who isn't afraid to stand out, this mascara delivers intense volume, stunning length, and captivating curl with every swipe.",
-      "price": 50
+      "price": 14
     },
     {
       "id": 29,
       "name": "Desert Rose Set",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Discover your creativity with the Desert Rose eyeshadow palette, featuring 15 stunning shades in rich dark pinks and vibrant purples. This versatile collection offers an array of hues that blend seamlessly to create endless eye looks, from sultry and dramatic to soft and romantic. Each shade is designed to provide intense pigmentation and smooth application, allowing you to craft mesmerizing looks that last all day.",
+      "price": 22
     },
     {
       "id": 30,
       "name": "Bare Elegance Set",
-      "description": "Description of product 3",
-      "price": 50
+      "description": "Discover timeless beauty with the Bare Elegance palette. Featuring 9 soft pinks and nudes, this set offers versatile, buildable shades for both everyday and elegant looks. Perfect for enhancing your natural beauty with a touch of sophistication.",
+      "price": 28
     },
     {
       "id": 31,
       "name": "Warm Rose",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 32,
       "name": "Pink Driftwood",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 33,
       "name": "Pink Melon",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 34,
       "name": "Vanilla Cream",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 35,
       "name": "Eclipse",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 36,
       "name": "Blue Lagoon",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 37,
       "name": "Berry Bliss",
       "description": "Description of product 3",
-      "price": 50
+      "price": 10
     },
     {
       "id": 38,
       "name": "Ivory",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     },
     {
       "id": 39,
       "name": "Light Beige",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     },
     {
       "id": 40,
       "name": "Peach",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     },
     {
       "id": 41,
       "name": "Beige",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     },
     {
       "id": 42,
       "name": "Medium Dark",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     },
     {
       "id": 43,
       "name": "Dark",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     },
     {
       "id": 44,
       "name": "Deep Dark",
       "description": "Description of product 3",
-      "price": 50
+      "price": 26
     }
   ]
 }
