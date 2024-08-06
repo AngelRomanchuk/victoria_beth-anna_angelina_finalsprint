@@ -15,13 +15,12 @@ body {
 
 .product {
   margin: 10px;
-  color: #d1edcc;
   padding: 10px;
   border: 1px solid #000000;
   border-radius: 8px;
   width: 200px;
   text-align: center;
-  background-color: #d1edcc;
+  background-color: #fff;
 }
 
 .product img {
