@@ -23,8 +23,6 @@ const ProductList = () => {
             <img src={product.Image} alt={product.name} />
             <h2>{product.name}</h2>
             <p>{product.serialNumber}</p>
-            <p>{product.description}</p>
-            <p>${product.price}</p>
           </div>
         ))}
       </div>

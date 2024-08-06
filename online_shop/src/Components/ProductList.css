@@ -1,8 +1,7 @@
-/* src/components/ProductList.css */
-
 body {
-  background-color: #f4c2c2;
+  background-color: #f7f7e1;
 }
+
 .product-list {
   text-align: center;
 }
@@ -21,10 +20,20 @@ body {
   width: 200px;
   text-align: center;
   background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
 }
 
 .product img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+h1 {
+  color: #000000;
+  text-shadow: 1px 1px 1px #fff;
 }
