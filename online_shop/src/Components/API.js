@@ -5,6 +5,7 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
+    Image: "./online_shop/public/Images/Rosette.jpg",
   },
   {
     serialNumber: 1002,
