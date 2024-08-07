@@ -1,8 +1,9 @@
 // import './App.css';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import ProductDetails from './Components/ProductDetails';
-import Header from './Components/Header';
-import Home from './Components/Home';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ProductDetails from "./Components/ProductDetails";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import "./index.css";
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductDetails />} />
         </Routes>
-
       </div>
     </Router>
   );
