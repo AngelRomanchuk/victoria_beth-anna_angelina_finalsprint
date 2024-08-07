@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const Banner = () => {
-    return (
-        <div>
-            <h1>Banner</h1>
-        </div>
-    );
-}
+const Banner = ({ title, subtitle, imageUrl }) => {
+  return (
+    <div className="banner">
+      <img src={imageUrl} alt="Banner" className="banner-image" />
+      <div className="banner-content">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+      </div>
+    </div>
+  );
+};
 
 export default Banner;

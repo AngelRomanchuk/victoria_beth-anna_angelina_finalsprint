@@ -170,3 +170,32 @@ h1 {
   font-weight: 400;
   font-style: italic;
 }
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+.banner-content h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.banner-content p {
+  margin: 0;
+  font-size: 1.5rem;
+}
