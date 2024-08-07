@@ -1,3 +1,4 @@
+/* Home Page CSS ********************************************************************************/
 .App {
     text-align: center;
   }
@@ -37,3 +38,66 @@
     }
   }
   
+  /* Product Details CSS ******************************************************************************/
+.ProductDetailsBox {
+    display: flex;
+    flex-direction: row;
+}
+.OrganizeDetails {
+    display: flex;
+    flex-direction: row;
+}
+.h1ProductDetails {
+    text-align: center;
+    margin: 2% auto;
+    color: rgba(103, 146, 110, 1);
+}
+.imgProductsDetails {
+    margin: 10px 20px;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+}
+.details {
+    margin: 0px 10px;
+}
+.ButtonPD {
+    height: 200px;
+    width: 100px;
+}
+.RandomProducts {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0px 30px;
+    margin: 1% auto;
+}
+.RandomProductsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.imgRandom {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .OrganizeDetails {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+    .imgProductsDetails {
+        margin: 1% auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+    .ButtonPD {
+        height: 200px;
+        width: 200px;
+    }
+}
