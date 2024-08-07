@@ -8,10 +8,8 @@ function App() {
   return (
     <Router>
       <div>
-        <Link to="/">Home </Link> |
-        <Link to="/products"> Show Lipgloss Products </Link> |
-
-        
+        {/* <Link to="/">Home </Link> |
+        <Link to="/products"> Show Lipgloss Products </Link> | */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductDetails />} />

@@ -33,28 +33,33 @@ const ProductDetails = () => {
     const currentProduct = products[currentIndex];
 
     return (
-        <div>
-            {products.length > 0 ? (
-                <div>
+        <>
+            <Header />
+            <div>
+                {products.length > 0 ? (
                     <div>
-                        <h2>{currentProduct.name}</h2>
-                        <img 
-                            src={`http://localhost:5000/${currentProduct.imgsrc}`} 
-                            alt={currentProduct.name} 
-                            style={{ width: '200px', height: 'auto' }} 
-                        />
-                        <p>{currentProduct.description}</p>
-                        <p>Price: ${currentProduct.price}</p>
+                        <div>
+                            <img 
+                                src={`http://localhost:5000/${currentProduct.imgsrc}`} 
+                                alt={currentProduct.name} 
+                                style={{ width: '200px', height: 'auto' }} 
+                            />
+                            <div>
+                                <h2>{currentProduct.name}</h2>
+                                <p>{currentProduct.description}</p>
+                                <p>Price: ${currentProduct.price}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button onClick={handlePrevious} disabled={products.length <= 1}>Previous</button>
+                            <button onClick={handleNext} disabled={products.length <= 1}>Next</button>
+                        </div>
                     </div>
-                    <div>
-                        <button onClick={handlePrevious} disabled={products.length <= 1}>Previous</button>
-                        <button onClick={handleNext} disabled={products.length <= 1}>Next</button>
-                    </div>
-                </div>
-            ) : (
-                <div>No products available</div>
-            )}
-        </div>
+                ) : (
+                    <div>No products available</div>
+                )}
+            </div>
+        </>
     );
 };
 
