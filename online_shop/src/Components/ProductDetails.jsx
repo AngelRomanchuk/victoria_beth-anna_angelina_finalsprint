@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
+import { VscChevronLeft } from "react-icons/vsc";
+import { VscChevronRight } from "react-icons/vsc";
 
 const ProductDetails = () => {
     const [products, setProducts] = useState([]); // Assuming products is an array
@@ -35,25 +37,24 @@ const ProductDetails = () => {
     return (
         <>
             <Header />
+            <h1 className='h1ProductDetails'>Product Details</h1>
             <div>
                 {products.length > 0 ? (
-                    <div>
-                        <div>
+                    <div className='ProductDetailsBox'> 
+                        <VscChevronLeft className='ButtonPD' onClick={handlePrevious} disabled={products.length <= 1}/>
+                        <div className='OrganizeDetails'>
                             <img 
+                                className='imgProductsDetails'
                                 src={`http://localhost:5000/${currentProduct.imgsrc}`} 
-                                alt={currentProduct.name} 
-                                style={{ width: '200px', height: 'auto' }} 
+                                alt={currentProduct.name}  
                             />
-                            <div>
+                            <div className='detailsProductDetails'>
                                 <h2>{currentProduct.name}</h2>
                                 <p>{currentProduct.description}</p>
                                 <p>Price: ${currentProduct.price}</p>
                             </div>
                         </div>
-                        <div>
-                            <button onClick={handlePrevious} disabled={products.length <= 1}>Previous</button>
-                            <button onClick={handleNext} disabled={products.length <= 1}>Next</button>
-                        </div>
+                        <VscChevronRight className='ButtonPD' onClick={handleNext} disabled={products.length <= 1} /> 
                     </div>
                 ) : (
                     <div>No products available</div>

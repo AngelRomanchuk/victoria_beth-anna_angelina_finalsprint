@@ -1,3 +1,4 @@
+/* Home Page CSS ********************************************************************************/
 .App {
     text-align: center;
   }
@@ -37,3 +38,49 @@
     }
   }
   
+  /* Product Details CSS ******************************************************************************/
+.ProductDetailsBox {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 30px;
+}
+.OrganizeDetails {
+    display: flex;
+    flex-direction: row;
+}
+.h1ProductDetails {
+    text-align: center;
+    margin: 1% auto;
+    color: rgba(103, 146, 110, 1);
+}
+.imgProductsDetails {
+    margin: 10px 20px;
+    width: 400px;
+    height: 250px;
+}
+.detailsProductDetails {
+    margin: 10px 20px;
+}
+.ButtonPD {
+    height: 200px;
+    width: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .OrganizeDetails {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 30px;
+    }
+    .imgProductsDetails {
+        margin: 1% auto;
+        width: 60%;
+        height: 40%;
+    }
+    .ButtonPD {
+        height: 300px;
+        width: 200px;
+    }
+}
