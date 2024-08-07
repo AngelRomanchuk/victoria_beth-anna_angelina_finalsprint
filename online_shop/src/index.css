@@ -42,8 +42,6 @@
 .ProductDetailsBox {
     display: flex;
     flex-direction: row;
-    border-radius: 5px;
-    padding: 30px;
 }
 .OrganizeDetails {
     display: flex;
@@ -51,36 +49,55 @@
 }
 .h1ProductDetails {
     text-align: center;
-    margin: 1% auto;
+    margin: 2% auto;
     color: rgba(103, 146, 110, 1);
 }
 .imgProductsDetails {
     margin: 10px 20px;
     width: 400px;
     height: 250px;
+    border-radius: 5px;
 }
-.detailsProductDetails {
-    margin: 10px 20px;
+.details {
+    margin: 0px 10px;
 }
 .ButtonPD {
     height: 200px;
     width: 100px;
+}
+.RandomProducts {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0px 30px;
+    margin: 1% auto;
+}
+.RandomProductsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.imgRandom {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 700px) {
     .OrganizeDetails {
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
-        padding: 30px;
+        padding: 0px 30px;
     }
     .imgProductsDetails {
         margin: 1% auto;
-        width: 60%;
-        height: 40%;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
     }
     .ButtonPD {
-        height: 300px;
+        height: 200px;
         width: 200px;
     }
 }

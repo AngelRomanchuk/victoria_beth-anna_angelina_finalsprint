@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import { VscChevronLeft } from "react-icons/vsc";
 import { VscChevronRight } from "react-icons/vsc";
+import RandomProduct from './RandomProduct';
 
 const ProductDetails = () => {
     const [products, setProducts] = useState([]); // Assuming products is an array
@@ -48,7 +49,7 @@ const ProductDetails = () => {
                                 src={`http://localhost:5000/${currentProduct.imgsrc}`} 
                                 alt={currentProduct.name}  
                             />
-                            <div className='detailsProductDetails'>
+                            <div className='details'>
                                 <h2>{currentProduct.name}</h2>
                                 <p>{currentProduct.description}</p>
                                 <p>Price: ${currentProduct.price}</p>
@@ -59,6 +60,8 @@ const ProductDetails = () => {
                 ) : (
                     <div>No products available</div>
                 )}
+
+                <RandomProduct />
             </div>
         </>
     );
