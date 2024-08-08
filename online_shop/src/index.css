@@ -1,3 +1,4 @@
+/* Home Page CSS ********************************************************************************/
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,14 +17,16 @@
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
-  }
+      }
   to {
     transform: rotate(360deg);
   }
+
 }
 
-/* src/components/Header.css */
-/* src/index.css */
+.App {
+    text-align: center;
+}
 
 .header {
   display: flex;
@@ -198,4 +201,98 @@ h1 {
 .banner-content p {
   margin: 0;
   font-size: 1.5rem;
+}
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Product Details CSS ******************************************************************************/
+.ProductDetailsBox {
+    display: flex;
+    flex-direction: row;
+}
+.OrganizeDetails {
+    display: flex;
+    flex-direction: row;
+}
+.h1ProductDetails {
+    text-align: center;
+    margin: 2% auto;
+    color: rgba(103, 146, 110, 1);
+}
+.imgProductsDetails {
+    margin: 10px 20px;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+}
+.details {
+    margin: 0px 10px;
+}
+.ButtonPD {
+    height: 200px;
+    width: 100px;
+}
+.RandomProducts {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0px 30px;
+    margin: 1% auto;
+}
+.RandomProductsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.imgRandom {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .OrganizeDetails {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+    .imgProductsDetails {
+        margin: 1% auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+    .ButtonPD {
+        height: 200px;
+        width: 200px;
+    }
 }
