@@ -7,12 +7,14 @@ import Banner from "./Components/Banner";
 function App() {
   return (
     <Router>
-      <Header />
+      {/* <Header />
       <Banner
         imageUrl={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Coming.png`}
-      />
+      /> */}
       {/* Define routes if you have other components/pages */}
-      <Routes></Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 }
