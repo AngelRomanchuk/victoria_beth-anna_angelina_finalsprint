@@ -21,7 +21,6 @@
   to {
     transform: rotate(360deg);
   }
-
 }
 
 .App {
@@ -76,6 +75,7 @@
 .icon {
   font-size: 30px;
   cursor: pointer;
+  color: #fff;
 }
 
 .nav {
@@ -295,4 +295,37 @@ h1 {
         height: 200px;
         width: 200px;
     }
+}
+
+/* Shopping Cart CSS ********************************************************************************************/
+.shopProductBlock {
+  align-items: center;
+  margin: 10px 100px;
+}
+.shopProduct {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.shopImg {
+  width: 150px;
+  border: 1px solid pink;
+  border-radius: 5px;
+}
+.totalPrice {
+  text-align: center;
+  color: gray;
+}
+@media screen and (max-width: 700px) {
+  .shopProduct {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .shopImg {
+    margin: 1% auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
 }

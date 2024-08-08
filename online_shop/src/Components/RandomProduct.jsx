@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import AddToCart from './AddToCart';
 
-const RandomProduct = () => {
+const RandomProduct = ({mainText}) => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -29,10 +30,10 @@ const RandomProduct = () => {
 
     return (
         <div>
-            <h1 className='h1ProductDetails'>Our Trends</h1>
+            <h1 className='h1ProductDetails'>{mainText}</h1>
             <div className='RandomProductsBox'>
                 {products.map((product) => (
-                    <div className='RandomProducts'>
+                    <div className='RandomProducts' key={product.serialNumber}>
                         <img 
                             className='imgRandom'
                             src={`http://localhost:5000/${product.imgsrc}`} 
@@ -40,7 +41,10 @@ const RandomProduct = () => {
                         />
                         <div className='details'>
                             <h2>{product.name}</h2>
+                            <p>#{product.serialNumber}</p>
                             <p>Price: ${product.price}</p>
+                            <button className='search-button'>Add To Wish List</button>
+                            <AddToCart product={product}/>
                         </div>
                     </div>
                 ))}

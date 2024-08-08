@@ -1,19 +1,17 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-import Header from "./Components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
-import Banner from "./Components/Banner";
+import ProductDetails from "./Components/ProductDetails";
+import ShoppingCart from "./Components/ShoppingCart";
 
 function App() {
   return (
     <Router>
-      {/* <Header />
-      <Banner
-        imageUrl={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Coming.png`}
-      /> */}
+      
       {/* Define routes if you have other components/pages */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products/:group" element={<ProductDetails />} />
+        <Route path="/shoppingcart" element={<ShoppingCart />} />
       </Routes>
     </Router>
   );

@@ -41,7 +41,9 @@ const Header = () => {
         </div>
         <div className="icons">
           <CgProfile className="icon" />
-          <PiShoppingCart className="icon" />
+          <Link to="/shoppingcart">
+            <PiShoppingCart className="icon" />
+          </Link>
         </div>
       </div>
     </header>

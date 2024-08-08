@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { getProducts } from "./API";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = () => {
@@ -13,6 +15,10 @@ const ProductList = () => {
     fetchProducts();
   }, []);
 
+  const handleDetailsClick = (group) => {
+    navigate(`/products/${group}`);
+  };
+
   return (
     <div className="product-list">
       <h1>Product List</h1>
@@ -22,6 +28,9 @@ const ProductList = () => {
             <img src={product.Image} alt={product.name} />
             <h2>{product.name}</h2>
             <p>{product.serialNumber}</p>
+            <button className='search-button' onClick={() => handleDetailsClick(product.group)}>
+              View More Details
+            </button>
           </div>
         ))}
       </div>
