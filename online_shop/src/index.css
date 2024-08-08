@@ -1,12 +1,207 @@
 /* Home Page CSS ********************************************************************************/
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+      }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
 .App {
     text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3d6d6;
+  padding: 0px 10px;
+  box-shadow: 0 2px #0000001a;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 300px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: #000000 underline;
+  margin-right: 10px;
+}
+
+.nav-links li {
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6bba81;
+}
+
+html,
+body {
+  background-color: #f2e4ca;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.product-list {
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #6bba81;
+  text-shadow: 0px 2px 2px #fff;
+}
+.search-button {
+  padding: 5px 10px;
+  background-color: #6bba81;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.search-button:hover {
+  background-color: #fff;
+  color: #6bba81;
+}
+.radley-regular-italic {
+  font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+.banner-content h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.banner-content p {
+  margin: 0;
+  font-size: 1.5rem;
+}
   
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {

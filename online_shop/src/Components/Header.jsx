@@ -1,25 +1,49 @@
-// src/components/Header.jsx
+// src/Components/Header.jsx
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation if you're using React Router
-// import "./App.css"; // Import CSS for styling
-
+import { Link } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
+import { PiShoppingCart } from "react-icons/pi";
+import { VscSearch } from "react-icons/vsc";
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h1>Beauty Bliss</h1>
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Beauty_Blisspng.png`}
+          alt="Beauty Bliss Logo"
+          className="logo"
+        />
+        <nav className="nav">
+          <ul className="nav-links radley-regular-italic">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/products">Shop</Link>
+            </li>
+            <li>
+              <Link to="/about">About </Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="icons">
+          <VscSearch />
+        </div>
+
+        <div className="search-bar">
+          <input type="text" placeholder="Type Here..." />
+          <button type="button" className="search-button">
+            Search
+          </button>
+        </div>
+        <div className="icons">
+          <CgProfile className="icon" />
+          <PiShoppingCart className="icon" />
+        </div>
       </div>
-      <nav className="nav">
-        <ul className="nav-links">
-          <Link to="/">Home</Link>
-
-          <Link to="/products">Products</Link>
-
-          <Link to="/about">About</Link>
-
-          <Link to="/contact">Contact</Link>
-        </ul>
-      </nav>
     </header>
   );
 };
