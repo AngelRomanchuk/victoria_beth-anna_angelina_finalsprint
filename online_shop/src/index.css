@@ -320,6 +320,10 @@ h1 {
   margin-left: 10px;
 }
 
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+}
 .footer-links {
   display: flex;
   gap: 15px; /* Space between links */
@@ -346,6 +350,31 @@ h1 {
 .footer-link:hover, .footer-social:hover {
   text-decoration: underline;
   color: #F4C2C2; /* Adjust as needed */
+}
+
+.footer p{
+  font-size: 14pt;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between links */
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between links */
+  }
+  .footer p{
+    font-size: 10pt;
+    margin: 20px;
+  }
 }
 
 /* Shopping Cart CSS ********************************************************************************************/
