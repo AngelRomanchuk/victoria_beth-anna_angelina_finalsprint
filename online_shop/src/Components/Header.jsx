@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
@@ -31,7 +32,7 @@ const Header = () => {
         <div className="icons">
           <VscSearch />
         </div>
- 
+
         <div className="search-bar">
           <input type="text" placeholder="Type Here..." />
           <button type="button" className="search-button">

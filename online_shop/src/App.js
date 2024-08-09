@@ -1,9 +1,11 @@
-// import './App.css';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import ProductDetails from './Components/ProductDetails';
+
 import Header from './Components/Header';
-import Home from './Components/Home';
 import Footer from './index.css'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import Banner from "./Components/Banner";
 
 function App() {
   return (
@@ -11,12 +13,12 @@ function App() {
       <div className="App">
         <Header />
         <Footer />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<ProductDetails />} />
-        </Routes>
 
       </div>
+      {/* Define routes if you have other components/pages */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { getProducts } from "./API";
-import "./ProductList.css";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
