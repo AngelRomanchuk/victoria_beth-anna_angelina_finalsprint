@@ -5,7 +5,8 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
-    Image: "./Images/Rosette.jpg",
+    Image: "/Images/Rosette.jpg",
+    group: "lipSticks",
   },
   {
     serialNumber: 1002,
@@ -13,7 +14,8 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
-    Image: "./Images/plumDandy.jpg",
+    Image: "/Images/plumDandy.jpg",
+    group: "lipSticks",
   },
   {
     serialNumber: 1003,
@@ -21,7 +23,8 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
-    Image: "./Images/Coral.jpg",
+    Image: "/Images/Coral.jpg",
+    group: "lipSticks",
   },
   {
     serialNumber: 1004,
@@ -29,7 +32,8 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
-    Image: "./Images/richEspresso.jpg",
+    Image: "/Images/richEspresso.jpg",
+    group: "lipSticks",
   },
   {
     serialNumber: 1005,
@@ -37,7 +41,8 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
-    Image: "./Images/offDuty.jpg",
+    Image: "/Images/offDuty.jpg",
+    group: "lipSticks",
   },
   {
     serialNumber: 1006,
@@ -45,7 +50,8 @@ const products = [
     description:
       "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
     price: 12,
-    Image: "./Images/blushingNudeLipstick.jpg",
+    Image: "/Images/blushingNudeLipstick.jpg",
+    group: "lipSticks",
   },
   {
     serialNumber: 1007,
@@ -53,7 +59,8 @@ const products = [
     description:
       "Add elegance to your lips with Silken Sheen Lip Gloss. This silky formula glides on effortlessly, providing a subtle tint and sophisticated sheen. Infused with hydrating ingredients, it keeps your lips smooth and soft for long-lasting, luminous wear.",
     price: 10,
-    Image: "./Images/sunlitNectar.jpg",
+    Image: "/Images/sunlitNectar.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1008,
@@ -61,7 +68,8 @@ const products = [
     description:
       "Add elegance to your lips with Silken Sheen Lip Gloss. This silky formula glides on effortlessly, providing a subtle tint and sophisticated sheen. Infused with hydrating ingredients, it keeps your lips smooth and soft for long-lasting, luminous wear.",
     price: 10,
-    Image: "./Images/magentaGleam.jpg",
+    Image: "/Images/magentaGleam.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1009,
@@ -69,7 +77,8 @@ const products = [
     description:
       "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
     price: 10,
-    Image: "./Images/rougeNoir.jpg",
+    Image: "/Images/rougeNoir.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1010,
@@ -77,7 +86,8 @@ const products = [
     description:
       "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
     price: 10,
-    Image: "./Images/scarletSpark.jpg",
+    Image: "/Images/scarletSpark.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1011,
@@ -85,7 +95,8 @@ const products = [
     description:
       "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
     price: 10,
-    Image: "./Images/naturalGlow.jpg",
+    Image: "/Images/naturalGlow.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1012,
@@ -93,7 +104,8 @@ const products = [
     description:
       "This matte lip gloss combines a smooth, luxurious finish with long-lasting, full coverage. It provides a lightweight feel, giving your lips a bold, sophisticated look that lasts all day.",
     price: 10,
-    Image: "./Images/paleMist.jpg",
+    Image: "/Images/paleMist.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1013,
@@ -101,7 +113,8 @@ const products = [
     description:
       "This matte lip gloss combines a smooth, luxurious finish with long-lasting, full coverage. It provides a lightweight feel, giving your lips a bold, sophisticated look that lasts all day.",
     price: 10,
-    Image: "./Images/pastelPetal.jpg",
+    Image: "/Images/pastelPetal.jpg",
+    group: "lipGloss",
   },
   {
     serialNumber: 1014,
@@ -109,7 +122,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/ivory.jpg",
+    Image: "/Images/ivory.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1015,
@@ -117,7 +131,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/luxBeige.jpg",
+    Image: "/Images/luxBeige.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1016,
@@ -125,7 +140,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/TanButtercup.jpg",
+    Image: "/Images/TanButtercup.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1017,
@@ -133,7 +149,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/rusticBlush.jpg",
+    Image: "/Images/rusticBlush.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1018,
@@ -141,7 +158,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/sunsetPeach.jpg",
+    Image: "/Images/sunsetPeach.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1019,
@@ -149,7 +167,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/softApricot.jpg",
+    Image: "/Images/softApricot.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1020,
@@ -157,7 +176,8 @@ const products = [
     description:
       "Enhance your natural glow with our compact blush powder. This finely milled, lightweight formula blends seamlessly into your skin, providing a buildable, natural-looking flush. Perfect for on-the-go touch-ups, it delivers a soft, radiant finish that lasts all day.",
     price: 18,
-    Image: "./Images/topicalSunriseblush.jpg",
+    Image: "/Images/topicalSunriseblush.jpg",
+    group: "blush",
   },
   {
     serialNumber: 1021,
@@ -165,7 +185,8 @@ const products = [
     description:
       "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
     price: 8,
-    Image: "./Images/hotHibiscus.jpg",
+    Image: "/Images/hotHibiscus.jpg",
+    group: "nails",
   },
   {
     serialNumber: 1022,
@@ -173,7 +194,8 @@ const products = [
     description:
       "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
     price: 8,
-    Image: "./Images/summerFizz.jpg",
+    Image: "/Images/summerFizz.jpg",
+    group: "nails",
   },
   {
     serialNumber: 1023,
@@ -181,7 +203,8 @@ const products = [
     description:
       "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
     price: 8,
-    Image: "./Images/fuchsiaFusion.jpg",
+    Image: "/Images/fuchsiaFusion.jpg",
+    group: "nails",
   },
   {
     serialNumber: 1024,
@@ -189,7 +212,8 @@ const products = [
     description:
       "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
     price: 8,
-    Image: "./Images/pinkBlaze.jpg",
+    Image: "/Images/pinkBlaze.jpg",
+    group: "nails",
   },
   {
     serialNumber: 1025,
@@ -197,7 +221,8 @@ const products = [
     description:
       "Experience bold, head-turning color with our intense nail polish. This high-impact formula delivers vivid, long-lasting shades with a single stroke. Its quick-drying, chip-resistant finish ensures your nails look flawless and vibrant for days, making a statement with every gesture.",
     price: 8,
-    Image: "./Images/cherryBomb.jpg",
+    Image: "/Images/cherryBomb.jpg",
+    group: "nails",
   },
   {
     serialNumber: 1026,
@@ -205,7 +230,8 @@ const products = [
     description:
       "Transform your lashes with Lash Revolution Mascara, the ultimate solution for achieving revolutionary volume, length, and definition. Created for those who demand the best, this mascara delivers unparalleled performance and stunning results with every application",
     price: 14,
-    Image: "./Images/lashRevolution.jpg",
+    Image: "/Images/lashRevolution.jpg",
+    group: "mascara",
   },
   {
     serialNumber: 1027,
@@ -213,7 +239,8 @@ const products = [
     description:
       "Unlock the secret to full, dramatic lashes with our Lash Revolution Mascara. This high-impact formula is designed to amplify your lashes with rich, buildable volume and intense color, providing a bold, eye-catching look that lasts all day.",
     price: 14,
-    Image: "./Images/dramaticDefinition.jpg",
+    Image: "/Images/dramaticDefinition.jpg",
+    group: "mascara",
   },
   {
     serialNumber: 1028,
@@ -221,7 +248,8 @@ const products = [
     description:
       "Unleash the power of bold, dramatic lashes with Fierce Flutter Mascara. Designed for the modern woman who isn't afraid to stand out, this mascara delivers intense volume, stunning length, and captivating curl with every swipe.",
     price: 14,
-    Image: "./Images/fierceFlutter.jpg",
+    Image: "/Images/fierceFlutter.jpg",
+    group: "mascara",
   },
   {
     serialNumber: 1029,
@@ -229,7 +257,8 @@ const products = [
     description:
       "Discover your creativity with the Desert Rose eyeshadow palette, featuring 15 stunning shades in rich dark pinks and vibrant purples. This versatile collection offers an array of hues that blend seamlessly to create endless eye looks, from sultry and dramatic to soft and romantic. Each shade is designed to provide intense pigmentation and smooth application, allowing you to craft mesmerizing looks that last all day.",
     price: 22,
-    Image: "./Images/desertRoseSet.jpg",
+    Image: "/Images/desertRoseSet.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1030,
@@ -237,7 +266,8 @@ const products = [
     description:
       "Discover timeless beauty with the Bare Elegance palette. Featuring 9 soft pinks and nudes, this set offers versatile, buildable shades for both everyday and elegant looks. Perfect for enhancing your natural beauty with a touch of sophistication.",
     price: 28,
-    Image: "./Images/bareEleganceSet.jpg",
+    Image: "/Images/bareEleganceSet.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1031,
@@ -245,7 +275,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/warmRose.jpg",
+    Image: "/Images/warmRose.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1032,
@@ -253,7 +284,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/pinkDriftwood.jpg",
+    Image: "/Images/pinkDriftwood.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1033,
@@ -261,7 +293,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/pinkMelon.jpg",
+    Image: "/Images/pinkMelon.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1034,
@@ -269,7 +302,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/vanillaCream.jpg",
+    Image: "/Images/vanillaCream.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1035,
@@ -277,7 +311,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/Eclipse.jpg",
+    Image: "/Images/Eclipse.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1036,
@@ -285,7 +320,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/blueLagoon.jpg",
+    Image: "/Images/blueLagoon.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1037,
@@ -293,7 +329,8 @@ const products = [
     description:
       "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
     price: 10,
-    Image: "./Images/berrybliss.jpg",
+    Image: "/Images/berrybliss.jpg",
+    group: "eyeShadow",
   },
   {
     serialNumber: 1038,
@@ -301,7 +338,8 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/ivoryf.jpg",
+    Image: "/Images/ivoryf.jpg",
+    group: "foundation",
   },
   {
     serialNumber: 1039,
@@ -309,7 +347,8 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/lightBeige.jpg",
+    Image: "/Images/lightBeige.jpg",
+    group: "foundation",
   },
   {
     serialNumber: 1040,
@@ -317,7 +356,8 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/Peach.jpg",
+    Image: "/Images/Peach.jpg",
+    group: "foundation",
   },
   {
     serialNumber: 1041,
@@ -325,7 +365,8 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/beige.jpg",
+    Image: "/Images/beige.jpg",
+    group: "foundation",
   },
   {
     serialNumber: 1042,
@@ -333,7 +374,8 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/mediumDark.jpg",
+    Image: "/Images/mediumDark.jpg",
+    group: "foundation",
   },
   {
     serialNumber: 1043,
@@ -341,7 +383,8 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/dark.jpg",
+    Image: "/Images/dark.jpg",
+    group: "foundation",
   },
   {
     serialNumber: 1044,
@@ -349,10 +392,14 @@ const products = [
     description:
       " Our lightweight, buildable foundation provides a flawless, natural finish that lasts all day. Infused with skin-loving ingredients, it hydrates and nourishes while offering customizable coverage.",
     price: 26,
-    Image: "./Images/deepDark.jpg",
+    Image: "/Images/deepDark.jpg",
+    group: "foundation",
   },
 ];
 export const getProducts = () => products;
 
 export const getProductByserialNumber = (productserialNumber) =>
   products.find((product) => product.serialNumber === productserialNumber);
+
+export const getProductsByGroup = (group) => 
+  products.filter((product) => product.group === group);

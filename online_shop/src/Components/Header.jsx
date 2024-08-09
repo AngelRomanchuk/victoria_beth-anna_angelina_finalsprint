@@ -1,4 +1,4 @@
-// src/Components/Header.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
@@ -41,11 +41,14 @@ const Header = () => {
         </div>
         <div className="icons">
           <CgProfile className="icon" />
-          <PiShoppingCart className="icon" />
+          <Link to="/shoppingcart">
+            <PiShoppingCart className="icon" />
+          </Link>
         </div>
       </div>
     </header>
   );
 };
+ 
 
 export default Header;

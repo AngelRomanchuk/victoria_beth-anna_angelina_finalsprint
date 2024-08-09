@@ -1,70 +1,81 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { getProductsByGroup } from './API';
 import Header from './Header';
-import { VscChevronLeft } from "react-icons/vsc";
-import { VscChevronRight } from "react-icons/vsc";
+import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc';
+import AddToCart from './AddToCart';
 import RandomProduct from './RandomProduct';
 
 const ProductDetails = () => {
-    const [products, setProducts] = useState([]); // Assuming products is an array
-    const [loading, setLoading] = useState(true);
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const { group } = useParams();
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-
-    useEffect(() => {
-        // Fetchinfg products for future display
-        const fetchProducts = async () => {
-            const res = await fetch('http://localhost:5000/products');
-            const data = await res.json();
-            // Filter to get the right products only
-            const filteredProducts = data.filter(product => product.group === 'nails');
-            setProducts(filteredProducts);
-            setLoading(false);
-        };
-
-        fetchProducts();
-    }, []);
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+  useEffect(() => {
+    const fetchProductsByGroup = async () => {
+      const data = await getProductsByGroup(group);
+        setProducts(data);
+        setLoading(false);
     };
 
-    const handlePrevious = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
-    };
+    fetchProductsByGroup();
+  }, [group]);
 
-    if (loading) return <div>Loading...</div>;
-    const currentProduct = products[currentIndex];
+  useEffect(() => {
+    if (products.length > 0) {
+      setCurrentIndex(0); // Reset to the first product if available
+    }
+  }, [products]);
 
-    return (
-        <>
-            <Header />
-            <h1 className='h1ProductDetails'>Product Details</h1>
-            <div>
-                {products.length > 0 ? (
-                    <div className='ProductDetailsBox'> 
-                        <VscChevronLeft className='ButtonPD' onClick={handlePrevious} disabled={products.length <= 1}/>
-                        <div className='OrganizeDetails'>
-                            <img 
-                                className='imgProductsDetails'
-                                src={`http://localhost:5000/${currentProduct.imgsrc}`} 
-                                alt={currentProduct.name}  
-                            />
-                            <div className='details'>
-                                <h2>{currentProduct.name}</h2>
-                                <p>{currentProduct.description}</p>
-                                <p>Price: ${currentProduct.price}</p>
-                            </div>
-                        </div>
-                        <VscChevronRight className='ButtonPD' onClick={handleNext} disabled={products.length <= 1} /> 
-                    </div>
-                ) : (
-                    <div>No products available</div>
-                )}
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+  };
 
-                <RandomProduct />
-            </div>
-        </>
-    );
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
+  };
+
+  if (loading) return <div>Loading...</div>;
+  if (products.length === 0) return <div>No products found for this group.</div>;
+
+  const currentProduct = products[currentIndex];
+  console.log(currentProduct.Image);
+
+  return (
+    <>
+      <Header />
+      <h1 className='h1ProductDetails'>Product Details</h1>
+      <div className='ProductDetailsBox'>
+        <VscChevronLeft
+          className='ButtonPD'
+          onClick={handlePrevious}
+          disabled={products.length <= 1}
+        />
+        <div className='OrganizeDetails' key={currentProduct.serialNumber}>
+          <img
+            className='imgProductsDetails'
+            src={process.env.PUBLIC_URL + currentProduct.Image}
+            alt={currentProduct.name}
+          />
+          <div className='details'>
+            <h2>{currentProduct.name}</h2>
+            <p>#{currentProduct.serialNumber}</p>
+            <p>{currentProduct.description}</p>
+            <p>Price: ${currentProduct.price}</p>
+            <button className='search-button'>Add To Wish List</button>
+            <AddToCart product={currentProduct} />
+          </div>
+        </div>
+        <VscChevronRight
+          className='ButtonPD'
+          onClick={handleNext}
+          disabled={products.length <= 1}
+        />
+      </div>
+      <RandomProduct mainText="Our Trends"/>
+    </>
+  );
 };
 
 export default ProductDetails;

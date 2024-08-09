@@ -10,7 +10,7 @@ const Home = () => {
       <Header />
       <Banner imageUrl={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Coming.png`}/>
       <ProductList />
-      <RandomProduct />
+      <RandomProduct mainText="Our Trends"/>
     </div>
   );
 };

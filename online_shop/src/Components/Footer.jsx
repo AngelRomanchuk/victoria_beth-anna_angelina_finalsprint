@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -29,4 +30,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
