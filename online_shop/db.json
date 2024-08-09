@@ -352,5 +352,44 @@
       "price": 26,
       "group": "foundation"
     }
+  ],
+  "cart": [
+    {
+      "0": [
+        {
+          "serialNumber": 1001,
+          "imgsrc": "assets/Images/LipSticks/rosette.jpg",
+          "name": "Rosette",
+          "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
+          "price": 12,
+          "group": "lipSticks"
+        }
+      ],
+      "id": "1723152196149"
+    },
+    {
+      "0": [
+        {
+          "serialNumber": 1030,
+          "imgsrc": "assets/Images/EyeShadow/bareEleganceSet.jpg",
+          "name": "Bare Elegance Set",
+          "description": "Discover timeless beauty with the Bare Elegance palette. Featuring 9 soft pinks and nudes, this set offers versatile, buildable shades for both everyday and elegant looks. Perfect for enhancing your natural beauty with a touch of sophistication.",
+          "price": 28,
+          "group": "eyeShadow"
+        }
+      ],
+      "id": "1723152201352"
+    },
+    {
+      "0": {
+        "serialNumber": 1009,
+        "imgsrc": "assets/Images/LipGloss/rougeNoir.jpg",
+        "name": "Rouge Noir",
+        "description": "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
+        "price": 10,
+        "group": "lipGloss"
+      },
+      "id": "7144"
+    }
   ]
 }
