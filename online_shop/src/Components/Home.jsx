@@ -48,7 +48,7 @@ const Home = () => {
       <div className="subCategories">
         {subCategories.map((category, index) => (
           <Link
-            to="/online_shop/src/Components/ProductList.jsx"
+            to="productlist"
             key={index}
             className="subCategory"
           >

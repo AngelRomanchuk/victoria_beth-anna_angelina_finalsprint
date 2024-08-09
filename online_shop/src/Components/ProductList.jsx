@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { getProducts } from "./API";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -21,6 +23,7 @@ const ProductList = () => {
 
   return (
     <div className="product-list">
+      <Header />
       <h1>Product List</h1>
       <div className="products">
         {products.map((product) => (
@@ -34,6 +37,7 @@ const ProductList = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
