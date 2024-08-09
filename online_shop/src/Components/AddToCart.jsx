@@ -1,35 +1,35 @@
-// src/components/AddToCart.js
+// src/AddToCartButton.js
 import React from 'react';
 
-const AddToCart = ({ product }) => {
+const AddToCartButton = ({ product }) => {
   const handleAddToCart = async () => {
-      // Fetch the product data from db.json
-      const serialNumberStr = String(product.serialNumber);
-      const response = await fetch(`http://localhost:5000/products?serialNumber=${serialNumberStr}`);
-      const productData = await response.json();
-
-      // Add the product to the cart
-      const cartResponse = await fetch('http://localhost:5000/cart', {
+    try {
+      const response = await fetch('http://localhost:5000/cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(productData),
+        body: JSON.stringify(product),
       });
 
-      if (!cartResponse.ok) {
-        throw new Error('Failed to add to cart');
+      if (!response.ok) {
+        throw new Error(`Network response was not ok. Status: ${response.status}`);
       }
 
-      // Optionally, you can provide feedback to the user
-      alert('Product added to cart!');
-    };
+      const result = await response.json();
+      console.log('Product added to cart:', result); // Debugging log
+
+      // Optionally handle the result (e.g., show a notification)
+    } catch (error) {
+      console.error('Error adding product to cart:', error);
+    }
+  };
 
   return (
-    <button onClick={handleAddToCart} className='search-button'>
-      Add to Cart
+    <button className='search-button' onClick={handleAddToCart}>
+      Add To Cart
     </button>
   );
 };
 
-export default AddToCart;
+export default AddToCartButton;
