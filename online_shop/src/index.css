@@ -388,3 +388,59 @@ h1 {
   margin-bottom: 10px;
   border-radius: 6pt;
 }
+
+/* Checkout CSS ************************************************************************/
+.centerLink {
+  margin: 1% auto;
+  font-size: 24pt;
+  background: none;
+  border: none;
+}
+.centerLink:hover {
+  margin: 1% auto;
+  font-size: 24pt;
+  background: none;
+  border: none;
+  transform: scale(1.1);
+}
+/* src/Checkout.css */
+.checkout-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.checkout-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.order-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.order-summary h3 {
+  margin: 5px 0;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+

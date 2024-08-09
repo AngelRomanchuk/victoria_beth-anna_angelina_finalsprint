@@ -4,10 +4,12 @@ import Header from "./Header";
 import RandomProduct from './RandomProduct';
 import Footer from './Footer';
 import DeleteButton from './DeleteButton';
+import Checkout from './Checkout';
 
 const ShoppingCart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showCheckout, setShowCheckout] = useState(false);
 
   useEffect(() => {
     const fetchCartItems = async () => {
@@ -34,6 +36,10 @@ const ShoppingCart = () => {
 
   const handleDelete = (serialNumber) => {
     setCartItems(prevItems => prevItems.filter(item => item.serialNumber !== serialNumber));
+  };
+
+  const handleCheckout = () => {
+    setShowCheckout(true); // Show the checkout component
   };
 
   if (loading) return <div>Loading...</div>;
@@ -63,6 +69,8 @@ const ShoppingCart = () => {
             </div>
             ))}
         </div>
+        <button className='nav-links centerLink' onClick={handleCheckout}>Checkout</button> {/* Add Checkout button */}
+        {showCheckout && <Checkout />} {/* Conditionally render Checkout component */}
         <RandomProduct mainText='You might like this'/>
         <Footer />
     </div>
