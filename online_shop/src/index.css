@@ -1,32 +1,4 @@
-/* Home Page CSS ********************************************************************************/
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-      }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App {
-    text-align: center;
-}
-
+/* Header CSS ******************************************************************************/
 .header {
   display: flex;
   flex-direction: column;
@@ -117,6 +89,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Product Lists CSS ******************************************************************************/
 .product-list {
   text-align: center;
 }
@@ -173,6 +146,7 @@ h1 {
   font-weight: 400;
   font-style: italic;
 }
+/* Banner CSS ******************************************************************************/
 .banner {
   position: relative;
   width: 100%;
@@ -202,99 +176,69 @@ h1 {
   margin: 0;
   font-size: 1.5rem;
 }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* Product Details CSS ******************************************************************************/
+
+/* Product Details CSS ******************************************************************************/
 .ProductDetailsBox {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .OrganizeDetails {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .h1ProductDetails {
-    text-align: center;
-    margin: 2% auto;
-    color: #6bba81;
+  text-align: center;
+  margin: 2% auto;
+  color: #6bba81;
 }
 .imgProductsDetails {
-    margin: 10px 20px;
-    width: 400px;
-    height: 250px;
-    border-radius: 5px;
+  margin: 10px 20px;
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
 }
 .details {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 .ButtonPD {
-    height: 200px;
-    width: 100px;
+  height: 200px;
+  width: 100px;
 }
 .RandomProducts {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    padding: 0px 30px;
-    margin: 1% auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0px 30px;
+  margin: 1% auto;
 }
 .RandomProductsBox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .imgRandom {
-    width: 200px;
-    height: 150px;
-    border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 700px) {
-    .OrganizeDetails {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 30px;
-    }
-    .imgProductsDetails {
-        margin: 1% auto;
-        width: 200px;
-        height: 200px;
-        border-radius: 5px;
-    }
-    .ButtonPD {
-        height: 200px;
-        width: 200px;
-    }
+  .OrganizeDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .imgProductsDetails {
+    margin: 1% auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .ButtonPD {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 /* Footer.css */
@@ -335,21 +279,24 @@ h1 {
   font-size: 20px;
 }
 
-.footer-links, .footer-socials {
+.footer-links,
+.footer-socials {
   margin: 10px 0;
   font-size: 20px;
   color: white;
 }
 
-.footer-link, .footer-social {
+.footer-link,
+.footer-social {
   color: black;
   margin: 0 10px;
   text-decoration: underline;
 }
 
-.footer-link:hover, .footer-social:hover {
+.footer-link:hover,
+.footer-social:hover {
   text-decoration: underline;
-  color: #F4C2C2; /* Adjust as needed */
+  color: #f4c2c2; /* Adjust as needed */
 }
 
 .footer p{
@@ -408,4 +355,36 @@ h1 {
     height: 200px;
     border-radius: 5px;
   }
+}
+
+/* Home - Categories CSS ******************************************************************************/
+.subCategories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.subCategory {
+  text-align: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  color: #000000;
+  text-shadow: 1px 1px #f4c2c2;
+}
+
+.subCategory:hover {
+  transform: scale(1.05);
+  color: #6bba81;
+}
+
+.subCategoryImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #6bba81;
+  margin-bottom: 10px;
+  border-radius: 6pt;
 }
