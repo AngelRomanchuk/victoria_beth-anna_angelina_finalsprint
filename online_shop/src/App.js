@@ -1,3 +1,6 @@
+
+import Header from './Components/Header';
+import Footer from './index.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Header from "./Components/Header";
@@ -7,10 +10,11 @@ import Banner from "./Components/Banner";
 function App() {
   return (
     <Router>
-      {/* <Header />
-      <Banner
-        imageUrl={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Coming.png`}
-      /> */}
+      <div className="App">
+        <Header />
+        <Footer />
+
+      </div>
       {/* Define routes if you have other components/pages */}
       <Routes>
         <Route path="/" element={<Home />} />
