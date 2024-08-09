@@ -297,6 +297,56 @@ h1 {
     }
 }
 
+/* Footer.css */
+.footer {
+  display: flex;
+  justify-content: space-between; /* This will push the content to the sides */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #6bba81; /* Adjust as needed */
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  color: #333; /* Adjust as needed */
+}
+
+.footerlogo {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  margin-left: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.footer-links a {
+  text-decoration: underline;
+  color: #333; /* Adjust as needed */
+  font-size: 20px;
+}
+
+.footer-links, .footer-socials {
+  margin: 10px 0;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-link, .footer-social {
+  color: black;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+.footer-link:hover, .footer-social:hover {
+  text-decoration: underline;
+  color: #F4C2C2; /* Adjust as needed */
+
 /* Shopping Cart CSS ********************************************************************************************/
 .shopProductBlock {
   align-items: center;
@@ -328,30 +378,4 @@ h1 {
     height: 200px;
     border-radius: 5px;
   }
-}
-
-/* Footer.css ********************************************************************************************************8*/
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
 }
