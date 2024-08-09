@@ -346,6 +346,7 @@ h1 {
 .footer-link:hover, .footer-social:hover {
   text-decoration: underline;
   color: #F4C2C2; /* Adjust as needed */
+}
 
 /* Shopping Cart CSS ********************************************************************************************/
 .shopProductBlock {

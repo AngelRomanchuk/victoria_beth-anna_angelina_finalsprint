@@ -5,6 +5,7 @@ import Header from './Header';
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc';
 import AddToCart from './AddToCart';
 import RandomProduct from './RandomProduct';
+import Footer from './Footer';
 
 const ProductDetails = () => {
   const { group } = useParams();
@@ -74,6 +75,7 @@ const ProductDetails = () => {
         />
       </div>
       <RandomProduct mainText="Our Trends"/>
+      <Footer />
     </>
   );
 };

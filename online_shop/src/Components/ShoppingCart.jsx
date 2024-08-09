@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from "./Header";
 import RandomProduct from './RandomProduct';
+import Footer from './Footer';
 
 const ShoppingCart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -47,6 +48,7 @@ const ShoppingCart = () => {
             ))}
         </div>
         <RandomProduct mainText='You might like this'/>
+        <Footer />
     </div>
   );
 };
