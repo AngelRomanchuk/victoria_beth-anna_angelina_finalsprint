@@ -3,18 +3,28 @@ import React, { useState, useEffect } from 'react';
 import Header from "./Header";
 import RandomProduct from './RandomProduct';
 import Footer from './Footer';
+import DeleteButton from './DeleteButton';
+import Checkout from './Checkout';
 
 const ShoppingCart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showCheckout, setShowCheckout] = useState(false);
 
   useEffect(() => {
     const fetchCartItems = async () => {
+      try {
         const response = await fetch('http://localhost:5000/cart');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
         const data = await response.json();
-        const transformedData = data.flatMap(item => item[0]);
-        setCartItems(transformedData);
+        setCartItems(data);
         setLoading(false);
+      } catch (error) {
+        console.error('Error fetching cart items:', error);
+        setLoading(false);
+      }
     };
 
     fetchCartItems();
@@ -24,8 +34,17 @@ const ShoppingCart = () => {
     return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
   };
 
+  const handleDelete = (serialNumber) => {
+    setCartItems(prevItems => prevItems.filter(item => item.serialNumber !== serialNumber));
+  };
+
+  const handleCheckout = () => {
+    setShowCheckout(true); // Show the checkout component
+  };
+
   if (loading) return <div>Loading...</div>;
-  if (cartItems.length === 0) return <div>Your cart is empty.</div>;
+  if (cartItems.length === 0) return <div><Header /><h1 className='h1ProductDetails'>Your cart is empty.</h1><RandomProduct mainText='You might like this'/>
+        <Footer /></div>;
 
   return (
     <div>
@@ -42,11 +61,16 @@ const ShoppingCart = () => {
                     <p>{item.description}</p>
                     <p>Price: ${item.price}</p>
                     <button className='search-button'>Add To Wish List</button>
-                    <button className='search-button'>Delete</button>
+                    <DeleteButton 
+                      serialNumber={item.id} 
+                      onDelete={handleDelete} 
+                    />
                 </div>
             </div>
             ))}
         </div>
+        <button className='nav-links centerLink' onClick={handleCheckout}>Checkout</button> {/* Add Checkout button */}
+        {showCheckout && <Checkout />} {/* Conditionally render Checkout component */}
         <RandomProduct mainText='You might like this'/>
         <Footer />
     </div>

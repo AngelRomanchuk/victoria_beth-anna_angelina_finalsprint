@@ -399,53 +399,22 @@
   ],
   "cart": [
     {
-      "0": [
-        {
-          "serialNumber": 1001,
-          "imgsrc": "assets/Images/LipSticks/rosette.jpg",
-          "name": "Rosette",
-          "description": "This high-pigment, full-coverage lipstick delivers long-lasting, vibrant color designed to complement any complexion. Enjoy a rich, true color that lasts all day, tailored to bring out the best in every skin tone.",
-          "price": 12,
-          "group": "lipSticks"
-        }
-      ],
-      "id": "1723152196149"
+      "id": "f1df",
+      "serialNumber": 1007,
+      "imgsrc": "assets/Images/LipGloss/sunlitNectar.jpg",
+      "name": "Sunlit Nectar",
+      "description": "Add elegance to your lips with Silken Sheen Lip Gloss. This silky formula glides on effortlessly, providing a subtle tint and sophisticated sheen. Infused with hydrating ingredients, it keeps your lips smooth and soft for long-lasting, luminous wear.",
+      "price": 10,
+      "group": "lipGloss"
     },
     {
-      "0": [
-        {
-          "serialNumber": 1030,
-          "imgsrc": "assets/Images/EyeShadow/bareEleganceSet.jpg",
-          "name": "Bare Elegance Set",
-          "description": "Discover timeless beauty with the Bare Elegance palette. Featuring 9 soft pinks and nudes, this set offers versatile, buildable shades for both everyday and elegant looks. Perfect for enhancing your natural beauty with a touch of sophistication.",
-          "price": 28,
-          "group": "eyeShadow"
-        }
-      ],
-      "id": "1723152201352"
-    },
-    {
-      "0": {
-        "serialNumber": 1009,
-        "imgsrc": "assets/Images/LipGloss/rougeNoir.jpg",
-        "name": "Rouge Noir",
-        "description": "Achieve a perfect blend of color and shine with Velvet Shine Lip Gloss. This luxurious formula applies smoothly, leaving your lips rich and glossy. Packed with moisturizers, it offers long-lasting hydration and vibrant color for a stunning, plump pout.",
-        "price": 10,
-        "group": "lipGloss"
-      },
-      "id": "7144"
-    },
-    {
-      "0": {
-        "serialNumber": 1033,
-        "imgsrc": "assets/Images/EyeShadow/pinkMelon.jpg",
-        "name": "Pink Melon",
-        "description": "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
-        "price": 10,
-        "group": "eyeShadow",
-        "id": "7bb1"
-      },
-      "id": "4fa9"
+      "id": "9e28",
+      "serialNumber": 1032,
+      "imgsrc": "assets/Images/EyeShadow/pinkDriftwood.jpg",
+      "name": "Pink Driftwood",
+      "description": "Elevate your eye makeup game with our Luminous Eye Shadow Collection. This stunning range of shades is designed to bring out the best in your eyes, whether you prefer a natural look or a dramatic flair.",
+      "price": 10,
+      "group": "eyeShadow"
     }
   ]
 }
