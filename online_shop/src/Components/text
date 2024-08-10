@@ -1,0 +1,47 @@
+<form className="checkout-form">
+        <div className='group1'>
+          <div className="form-group">
+            <label className='name'>Name:</label>
+            <input className="enter" type="text" name="name" value={formData.name} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label className='name'>Phone Number:</label>
+            <input className="enter" type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label className='name'>Email:</label>
+            <input className="enter" type="email" name="email" value={formData.email} onChange={handleChange} required />
+          </div>
+        </div>
+        <div className='group2'>
+          <div className="form-group">
+            <label className='name'>Address:</label>
+            <input className="enter" type="text" name="address" value={formData.address} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label className='name'>City:</label>
+            <input className="enter" type="text" name="city" value={formData.city} onChange={handleChange} required />
+          </div>
+        </div>
+        <div className='group3'>
+          <div className="form-group">
+            <label className='name'>Province:</label>
+            <input className="enter" type="text" name="province" value={formData.province} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label className='name'>ZIP Code:</label>
+            <input className="enter" type="text" name="zip" value={formData.zip} onChange={handleChange} required />
+          </div>
+        </div>
+        <div className="form-group">
+          <label className='checkbox'>
+            <input
+              type="checkbox"
+              name="isGift"
+              checked={formData.isGift}
+              onChange={handleChange}
+            />
+            Is this a gift?
+          </label>
+        </div>
+      </form>

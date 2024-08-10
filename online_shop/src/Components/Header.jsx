@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Beauty_Blisspng.png`}
+          src={`${process.env.PUBLIC_URL}/Images/Beauty_Bliss.png`}
           alt="Beauty Bliss Logo"
           className="logo"
         />
@@ -19,7 +19,7 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/products">Shop</Link>
+              <Link to="/productlist">Shop</Link>
             </li>
             <li>
               <Link to="/about">About </Link>
