@@ -9,32 +9,32 @@ const Home = () => {
   const subCategories = [
     {
       title: "LipSticks",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/LipSticks/rosette.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images/rosette.jpg`,
     },
     {
       title: "LipGloss",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/LipGloss/naturalGlow.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images/naturalGlow.jpg`,
     },
     {
       title: "Blush",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/Blush/topicalSunriseblush.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images/topicalSunriseblush.jpg`,
     },
     {
       title: "Nails",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/Nails/summerFizz.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images/summerFizz.jpg`,
     },
     {
       title: "Mascara",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/Mascara/fierceFlutter.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images/fierceFlutter.jpg`,
     },
 
     {
       title: "Eyeshadows",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/EyeShadow/pinkDriftwood.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images//pinkDriftwood.jpg`,
     },
     {
       title: "Foundation",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/Images/Foundations/ivory.jpg`,
+      imageUrl: `${process.env.PUBLIC_URL}/Images/ivory.jpg`,
     },
   ];
 
@@ -43,7 +43,7 @@ const Home = () => {
       <Header />
 
       <Banner
-        imageUrl={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Coming.png`}
+        imageUrl={`${process.env.PUBLIC_URL}/Images/Coming.png`}
       />
       <div className="subCategories">
         {subCategories.map((category, index) => (

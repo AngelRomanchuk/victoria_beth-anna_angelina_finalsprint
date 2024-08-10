@@ -28,7 +28,7 @@ const Footer = () => {
         <a href="#contact">Contact</a>
       </div>
       <img 
-        src={`${process.env.PUBLIC_URL}/assets/Images/brand-pics/Beauty_Blisspng.png`}
+        src={`${process.env.PUBLIC_URL}/Images/Beauty_Bliss.png`}
         className="footerlogo"
       />
     </footer>

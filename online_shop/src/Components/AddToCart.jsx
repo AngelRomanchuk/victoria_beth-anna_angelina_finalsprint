@@ -15,14 +15,13 @@ const AddToCartButton = ({ product }) => {
       if (!response.ok) {
         throw new Error(`Network response was not ok. Status: ${response.status}`);
       }
-
-      const result = await response.json();
-      console.log('Product added to cart:', result); // Debugging log
-
-      // Optionally handle the result (e.g., show a notification)
-    } catch (error) {
-      console.error('Error adding product to cart:', error);
-    }
+    
+      // Show success message
+      window.alert('Product added to cart successfully!');
+      } catch (error) {
+        // Show error message
+        window.alert(`Error adding product to cart: ${error.message}`);
+      }
   };
 
   return (

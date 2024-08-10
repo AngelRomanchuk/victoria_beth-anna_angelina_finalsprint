@@ -1,10 +1,10 @@
 // src/DeleteButton.js
 import React from 'react';
 
-const DeleteButton = ({ serialNumber, onDelete }) => {
+const DeleteButton = ({ id, onDelete }) => {
   const handleDelete = async () => {
     try {
-      const url = `http://localhost:5000/cart/${serialNumber}`;
+      const url = `http://localhost:5000/cart/${id}`;
       const response = await fetch(url, {
         method: 'DELETE',
       });
@@ -13,10 +13,13 @@ const DeleteButton = ({ serialNumber, onDelete }) => {
         throw new Error(`Network response was not ok. Status: ${response.status}`);
       }
 
-      // Notify the parent component to update its state
-      onDelete(serialNumber);
+      onDelete(id);
+
+      // Show a success message
+      window.alert('Product successfully deleted from cart!');
     } catch (error) {
       console.error('Error deleting the product:', error);
+      window.alert('Failed to delete the item. Please try again.');
     }
   };
 

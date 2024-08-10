@@ -403,19 +403,41 @@ h1 {
   border: none;
   transform: scale(1.1);
 }
-/* src/Checkout.css */
+
 .checkout-container {
   padding: 20px;
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
 }
 
-.checkout-form {
-  margin-bottom: 20px;
+.group1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.group2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+.group3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+.checkbox{
+  margin-left: 42%;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin: 15px 10px;
+}
+.form-group .enter{
+  width: 300px;
+  height: 20px;
+  margin-left: 5px;
 }
 
 .order-summary {
@@ -424,23 +446,26 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-
 .order-summary h3 {
   margin: 5px 0;
 }
-
-.checkout-button {
+.total {
+  display: flex;
+  justify-content: space-around;
+}
+.gift{
+  text-align: center;
+}
+.checkoutBtn{
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
+  text-align: center;
+  margin-left: 43%;
 }
-
-.checkout-button:hover {
-  background-color: #0056b3;
+@media screen and (max-width: 1300px) {
+  .group1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 15%;
+  }
 }
-
