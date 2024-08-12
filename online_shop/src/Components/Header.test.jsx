@@ -9,7 +9,6 @@ test('renders the navigation links', () => {
     </MemoryRouter>
   );
 
-  // Check if the navigation links are present
   const homeLink = screen.getByText(/Home/i);
   expect(homeLink).toBeInTheDocument();
 });
